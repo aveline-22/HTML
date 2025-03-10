@@ -1,71 +1,24 @@
+.container{
+    width: 50%;
+    height: 200px;
+    overflow: auto;
+    margin-left: 0 auto;
+}
+.static {position: static; border: 2px solid green;}
+.relative{
+    position: relative;
+    border: 2px solid red;
+    left: 20px; /*jarak dari posisi paling kiri sebesar 20px */
+    bottom: 0; /*jarak dari posisi paling bawah sebesar 0px */
 
-body{background-color: #247b9e;}
-div.container{
-    margin: 0 auto;
-    width: 90;
 }
-header{
-    width: 100%;
-    height: 100px;
-    background-color: #820215;
-}
-nav{
-    width: 20%;
-    height: 800px;
-    background: #002f42;
-    float: left;
-}
-div.content{
-    width: 80%;
-    height: 800px;
-    background: #fff;
-    float: right;
-}
-footer{
-    width: 100%;
-    height: 50px;
-    background: #016060;
-}
-.maroon {color: #820004;}
-.navy {color: #05004c;}
-.indigo {color: #5D76CB;}
-.spacing{letter-spacing: 2px; word-spacing: 5px; line-height: 20px;}
-.uppercase{text-transform: uppercase;}
-.lowercase{text-transform: lowercase;}
-.capitalize{text-transform: capitalize;}
-.paragraf{
-    font-family: "Courier New";
-    font-size: 20px;
-}
-ul{
-    list-style-type:circle;
-}
-li{
-    font-family: "Tahoma";
-    font-size: 15px;
-}
-
-.btn-red{padding: 10px; background: #fc0202; color: #fff;}
-.btn-blue{padding: 10px; background: rgb(135, 135, 247); color: #fff;}
-.btn-green{padding: 10px; background: rgb(35, 105, 35); color: #fff;}
-.solid{
-    border-style: solid; border-width: 4px; background-color: #000;
-}
-.dotted{
-    border-style: dotted; border-width: 4px; background-color: #000
-}
-.double{
-    border-style: double; border-width: 4px; background-color: #000
-}
-.ridge{
-    border-style: ridge; border-width: 4px;
-}
-.inset{
-    border-style: inset; border-width: 4px;
-}
-.outside{
-    border-style: outset; border-width: 4px;
-}
-.round{
-    border-radius: 20px;
+.absolute{position: absolute; border: 2px solid blue; left:20px; bottom: 40px;}
+.fixed{position:fixed; border: 2px solid black; bottom: 0; right: 0;}
+.stiky{
+    position: sticky;
+    border: 2px solid yellow;
+    top: 0;
+    left: 20px;
+    background: darkblue;
+    color: white;
 }
